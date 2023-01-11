@@ -1,0 +1,26 @@
+
+import 'package:screen_protector/screen_protector.dart';
+
+
+// Screen Shot Disable in ios 
+
+
+
+ iosScreenShotDisable() async {
+    if (Platform.isIOS) {
+      // For disable screenshot in IOS
+      await ScreenProtector.preventScreenshotOn();
+    }
+  }
+  
+  
+//   back groud blur
+
+
+
+  iosBackBlur() async {
+    if (Platform.isIOS) {
+      // For disable view background in IOS
+      await ScreenProtector.protectDataLeakageWithBlur();
+    }
+  }
